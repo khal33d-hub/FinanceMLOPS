@@ -1,4 +1,9 @@
 pandas
 numpy
 seaborn
+requests
+mplfinance
+scikit-learn
+plotly
+nbformat
 -e .
