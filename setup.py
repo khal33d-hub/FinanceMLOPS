@@ -17,8 +17,9 @@ def get_requirements(file_path:str)->List[str]:
     
     return requirements
 
-setup(    name="mlptoject",
-    version="0.1.0",
+setup(
+    name="mlproject",
+    version="0.1.1",
     author="Khaleed Oyeleke",
     author_email="khaleed.oyeleke@outlook.com",
     packages=find_packages(),
