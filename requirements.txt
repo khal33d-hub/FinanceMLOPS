@@ -6,4 +6,6 @@ mplfinance
 scikit-learn
 plotly
 nbformat
+matplotlib
+dill
 -e .
