@@ -1,0 +1,49 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Student Exam Performance Indicator</h1>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Student Exam Performance Prediction</legend>
+        </h1>
+
+        <div class="mb-3">
+            <label class="form-label">Open Price</label>
+            <input class="form-control" type="number" name="open_price"
+                placeholder="Enter the Open Price" min='0' max='100' required step="any"/>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Low Price</label>
+            <input class="form-control" type="number" name="low_price"
+                placeholder="Enter the Low Price" min='0' max='100' required step="any"/>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">High Price</label>
+            <input class="form-control" type="number" name="high_price"
+                placeholder="Enter the High Price" min='0' max='100' required step="any"/>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Volume</label>
+            <input class="form-control" type="number" name="volume"
+                placeholder="Enter the Volume" min='0' max='2000000' required step="any"/>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Adj Close</label>
+            <input class="form-control" type="number" name="adj_close"
+                placeholder="Enter the Adj Close" min='0' max='100' required step="any"/>
+        </div>
+
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict the Close Price" required />
+        </div>
+    </form>
+    <h2>
+       THE  prediction is {{results}}
+    </h2>
+   <body>
+</html>
